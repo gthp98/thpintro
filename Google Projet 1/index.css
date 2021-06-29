@@ -1,0 +1,148 @@
+html{
+	height:  100%;
+	min-heigt: 100%;
+}
+
+nav{
+	display: grid;
+	grid-template-columns: 1fr 50px 50px 50px 50px;
+	grid-template-rows: 50px;
+	grid-template-areas: ". gmail images google-apps sign-in ";
+
+}
+
+a {
+	text-decoration: none;
+	color : black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+
+/* NAV BAR */
+
+#Gmail {
+	grid-area: gmail;
+	justify-self: center;
+	align-self: center;
+}
+
+#Images {
+	grid-area: images;
+	justify-self: center;
+	align-self: center;
+}
+
+#Google-apps {
+	grid-area: google-apps;
+	justify-self: center;
+	align-self: center;
+}
+
+#Sign-in {
+	grid-area: sign-in;
+	justify-self: center;
+	align-self: center;
+}
+
+
+/* SECTION */
+
+section {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 250px 70px 70px 250px;
+	grid-template-areas: 
+	". logo ." 
+	". search ." 
+	". flexbox . " 
+	". google-text . "
+	;
+
+}
+
+#logo {
+	grid-area: logo;
+	justify-self: center;
+	align-self: center;
+}
+
+#search {
+	grid-area: search;
+	height: 30px;
+	align-self: center;
+}
+
+#flexbox {
+	display: flexbox;
+	grid-area: flexbox;
+	justify-self: center;
+	align-self: center;
+}
+
+#google-search-btn {
+	grid-area: google-search-btn;
+}
+
+#lucky-btn {
+	grid-area: lucky-btn;
+}
+
+#google-text {
+	grid-area: google-text;
+	justify-self: center;
+}
+
+
+/* FOOTER */
+
+footer {
+	display: grid;
+	grid-template-columns: 80px 80px 80px 1fr 150px 80px 80px 80px;
+	grid-template-rows: 50px;
+	grid-template-areas:
+	"about advertising business how . consumer privacy terms settings ";
+
+}
+
+#About {
+	grid-area: about;
+	justify-self:center;
+	align-self: center;
+}
+#Advertising {
+	grid-area: advertising;
+	justify-self: center;
+	align-self: center;
+}
+#Business {
+	grid-area: business;
+	justify-self: center;
+	align-self: center;
+}
+#How {
+	grid-area: how ;
+	justify-self: center;
+	align-self: center;
+}
+#Consumer {
+	grid-area: consumer ;
+	justify-self: center;
+	align-self: center;
+}
+#Privacy {
+	grid-area: privacy: ;
+	justify-self: center;
+	align-self: center;
+}
+#Terms {
+	grid-area: terms ;
+	justify-self: center;
+	align-self: center;
+}
+#Settings {
+	grid-area: settings ;
+	justify-self: center;
+	align-self: center;
+}
